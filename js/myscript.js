@@ -20,7 +20,7 @@ console.log(userAge);
 const ticketPrice = 0.21;
 
 // 3
-const totalPrice = chilometri * ticketPrice + '€';
+const totalPrice = chilometri * ticketPrice;
 console.log(totalPrice)
 
 let discountPrice;
