@@ -32,5 +32,5 @@ if (userAge < 18){
     discountPrice = totalPrice - (totalPrice * 0.4);
     console.log('Essendo over 65, hai diritto ad uno sconto del 40% sul prezzo del biglietto')
 } else {
-
+    totalPrice == totalPrice
 }
