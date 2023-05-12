@@ -29,10 +29,10 @@ if (userAge < 18){
     discountPrice = totalPrice - (totalPrice * 0.2);
     console.log('Essendo ancora minorenne, hai diritto ad uno sconto del 20% usl prezzo del biglietto')
     console.log(discountPrice)
-    document.getElementById("discount").innerHTML = (discountPrice);
+    document.getElementById("discount").innerHTML = discountPrice.toFixed(2);
 } else if (userAge > 65){
     discountPrice = totalPrice - (totalPrice * 0.4);
     console.log('Essendo over 65, hai diritto ad uno sconto del 40% sul prezzo del biglietto')
     console.log(discountPrice)
-    document.getElementById("discount").innerHTML = (discountPrice)
+    document.getElementById("discount").innerHTML = discountPrice.toFixed(2)
 }
