@@ -13,7 +13,7 @@ const chilometri = parseInt (prompt('Inserire i chilometri da percorrere'));
 console.log(chilometri);
 
 // 2
-const userAge = parseInt (prompt('Inserire quanti hanni ha il passeggero'));
+const userAge = parseInt (prompt('Inserire quanti anni ha il passeggero'));
 console.log(userAge);
 
 // Prezzo del biglietto per chilometro
@@ -23,14 +23,14 @@ const ticketPrice = 0.21;
 const totalPrice = chilometri * ticketPrice + '€';
 console.log(totalPrice)
 
-let discount;
+let discountPrice;
 
 if (userAge < 18){
+    discountPrice = totalPrice - (totalPrice * 0.2);
     console.log('Essendo ancora minorenne, hai diritto ad uno sconto del 20% usl prezzo del biglietto')
-    discount = totalPrice - (totalPrice * 0.2);
 } else if (userAge > 65){
+    discountPrice = totalPrice - (totalPrice * 0.4);
     console.log('Essendo over 65, hai diritto ad uno sconto del 40% sul prezzo del biglietto')
-    discount = totalPrice - (totalPrice * 0.4);
 } else {
 
 }
