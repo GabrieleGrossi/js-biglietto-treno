@@ -36,4 +36,3 @@ if (userAge < 18){
     console.log(discountPrice)
     document.getElementById("discount").innerHTML = (discountPrice)
 }
-a
